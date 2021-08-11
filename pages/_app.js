@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import "../sass/main.scss"
 
 function MyApp({ Component, pageProps }) {
