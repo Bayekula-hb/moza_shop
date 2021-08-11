@@ -1,0 +1,353 @@
+.section--home {
+  padding: 2.19%;
+  .div--home {
+    width: 99%;
+    max-height: 90vh;
+    font-family: "Ubuntu Mono", monospace;
+    & .description,
+    & .div--presentation {
+      margin: auto 0%;
+      font-size: 3.4rem;
+      padding-bottom: 8%;
+      padding-top: 10%;
+      .underline--magical {
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 0.2em;
+        background-position: 0 88%;
+        transition: background-size 0.25s ease-in;
+        &:hover {
+          background-size: 100% 88%;
+        }
+      }
+      p {
+        text-align: center;
+        text-justify: auto;
+        width: 90%;
+        margin: auto;
+      }
+      .para--me {
+        padding-bottom: 5%;
+        & span {
+          color: #ee5253;
+        }
+      }
+    }
+    & .div--img {
+      img {
+        object-fit: cover;
+        width: 60%;
+        max-height: 100% !important;
+        margin-top: 5%;
+      }
+    }
+  }
+}
+.section--about {
+  background-color: #576574;
+  padding: 6% 0%;
+  & .div--about {
+    font-weight: 400;
+    color: #fff;
+    &--text {
+      width: 20%;
+      h2 {
+        width: 100%;
+        font-size: 5rem;
+      }
+    }
+    &--details {
+      & > p {
+        font-size: 2.7rem;
+      }
+    }
+  }
+}
+.section--skills {
+  padding: 4%;
+  .div--skills {
+    width: 80%;
+    margin: 0% auto;
+    &--text {
+      width: 40%;
+      margin: 1% auto;
+      h2 {
+        text-align: center;
+        font-size: 5rem !important;
+      }
+    }
+    &--details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 1%;
+      font-size: 3rem;
+      figure {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        &:hover {
+          filter: invert(38%) sepia(16%) saturate(3237%) hue-rotate(312deg)
+            brightness(104%) contrast(105%);
+          transform: scale(1.2);
+        }
+        img {
+          width: 30%;
+          align-self: center;
+        }
+        figcaption {
+          text-align: center;
+          text-transform: uppercase;
+          padding: 2% 0;
+        }
+      }
+    }
+  }
+}
+.section--services {
+  background-color: #576574;
+  text-align: center;
+  .div--services {
+    &--text {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+    &--details {
+      font-size: 3rem;
+      margin: 2% auto;
+      .card {
+        margin: 1% 2%;
+        align-self: center;
+        background-color: #576574;
+        color: #fff;
+        border-radius: 15px;
+        border-color: #f3506b;
+        padding: 1%;
+        .card-title {
+          color: #ee5253;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+.section--projects {
+  padding: 2%;
+  font-size: 5rem;
+  & .div--projects {
+    &--text {
+      padding: 1%;
+      h2 {
+        font-size: 4rem;
+      }
+    }
+    &--details {
+      display: flex;
+      flex-wrap: nowrap;
+      .card {
+        border-radius: 15px;
+        font-size: 2.4rem;
+        margin: 1% 1%;
+        padding: 0%;
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
+.section--contact {
+  padding: 2%;
+  background-color: #576574;
+  font-size: 2rem;
+  .div--contact {
+    h2 {
+      padding: 1%;
+      i {
+        color: #f3506b;
+        font-size: 5rem !important;
+      }
+    }
+    &--form {
+      form {
+        & input,
+        & textarea {
+          margin: 1%;
+          border-radius: 15px;
+          padding: 1%;
+          outline: none;
+          border: 2px solid;
+          &:focus {
+            border: #f3506b 2px solid;
+          }
+          &::placeholder {
+            font-size: 1.6rem;
+          }
+        }
+        .btn--contact {
+          border: #f3506b 2px solid;
+          border-radius: 15px;
+          margin: 1% auto;
+          align-self: center;
+          color: #fff;
+          outline: none;
+          font-size: 2.4rem;
+          &:hover {
+            background-color: #f3506b;
+            border-color: #576574;
+          }
+        }
+      }
+    }
+    &--details {
+      height: 90%;
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+footer {
+  color: #ee5253;
+  padding: 0.7%;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+@media screen and (max-device-width: 480px) {
+  .section--home {
+    padding: 1%;
+    .div--home {
+      width: 95%;
+      margin: 0 auto;
+      & .div--presentation {
+        margin: 0;
+        padding: 9% 0%;
+        .para--me,
+        p {
+          width: 100%;
+          font-size: 1.2rem;
+        }
+        .para--me {
+          text-align: center;
+          padding-bottom: 5%;
+        }
+        .para--passion {
+          text-align: justify;
+        }
+      }
+      & .div--img {
+        margin: 0;
+        .img--profile,
+        img {
+          border-radius: 0%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .section--about {
+    & .div--about {
+      text-align: center;
+      &--text {
+        h2 {
+          font-size: 2rem;
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 0%;
+          height: 2px;
+          background: #f3506b;
+        }
+      }
+      &--details {
+        text-align: justify;
+        p {
+          padding: 1% 6%;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .section--skills {
+    .div--skills {
+      &--text {
+        h2 {
+          font-size: 2rem !important;
+        }
+      }
+      &--details {
+        figure {
+          figcaption {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .section--services {
+    .div--services {
+      &--text {
+        h2 {
+          font-size: 2rem;
+        }
+      }
+      &--details {
+        .card {
+          font-size: 1.4rem;
+          .card-title {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .section--projects {
+    padding: 2%;
+    font-size: 2rem;
+    & .div--projects {
+      &--text {
+        padding: 1%;
+        h2 {
+          font-size: 2rem;
+        }
+      }
+      &--details {
+        flex-direction: column;
+        .card {
+          font-size: 1.6rem;
+          margin: 1% 0%;
+          padding: 0%;
+          img {
+            width: 99%;
+          }
+        }
+      }
+    }
+  }
+  .section--contact {
+    padding: 2%;
+    font-size: 1.6rem;
+    .div--contact {
+      &--form {
+        form {
+          margin: 0% 0.7%;
+          .btn--contact {
+            width: auto;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &--details {
+        display: none;
+      }
+    }
+  }
+  footer {
+    font-size: 1.6rem;
+  }
+}
