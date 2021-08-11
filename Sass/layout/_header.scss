@@ -1,34 +1,29 @@
 header {
   font-size: 2.3rem;
   background-color: #576574;
-  & .div-date-reseaux{
+  & .div-date-reseaux {
     color: #fff !important;
-  }
-  nav {
-    & .head__title {
-      font-size: 2.3rem;
-      color: $color-btn-index !important;
-      align-self: center;
-      width: 27%;
-    }
-    & button {
-      color: #fff !important;
-    }
-    & .navbar-collapse {
-      // .active {
-      //   .nav-link {
-      //     color: #ee5253 !important;
-      //   }
-      // }
-      .nav-link {
-        &:hover {
-          color: #ee5253 !important;
+    padding: 0%;margin: 0%;
+    align-items: center;
+    & .div-reseaux {
+      & .menu-reseaux {
+        display: inline-block;
+        & li {
+          display: inline-block;
+          .nav-link {
+            width: 51%;
+            height: 51%;
+            &:hover {
+              &:hover {
+                filter: invert(38%) sepia(16%) saturate(3237%)
+                  hue-rotate(312deg) brightness(104%) contrast(105%);
+                transform: scale(1.2);
+              }
+            }
+          }
         }
       }
     }
-  }
-  .nav-link {
-    color: #fff !important;
   }
 }
 

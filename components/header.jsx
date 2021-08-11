@@ -16,13 +16,13 @@ const Header =()=>{
     return(
         <header>
             <div className="div-container container">
-                <div className="div-date-reseaux row">
+                <div className="div-date-reseaux row container justify-content-between ">
                     <div className="div-date col-3">{dateState}</div>
-                    <div className="div-reseaux col-4">
-                        <ul>
-                            <li className="link-reseaux"><a href="facebook.com"><Image src={fb} alt="facebook"/></a></li>
-                            <li className="link-reseaux"><a href="facebook.com"><Image src={instagram} alt="facebook"/></a></li>
-                            <li className="link-reseaux"><a href="facebook.com"><Image src={twitter} alt="facebook"/></a></li>
+                    <div className="div-reseaux col-2">
+                        <ul className="menu-reseaux navbar-nav mr-auto mt-2 mt-lg-0 justify-content-between">
+                            <li className="link-reseaux col-4 nav-item"><a href="facebook.com" className="nav-link"><Image src={fb} alt="facebook"/></a></li>
+                            <li className="link-reseaux col-4 nav-item"><a href="facebook.com" className="nav-link"><Image src={instagram} alt="facebook"/></a></li>
+                            <li className="link-reseaux col-4 nav-item"><a href="facebook.com" className="nav-link"><Image src={twitter} alt="facebook"/></a></li>
                         </ul>
                     </div>
                 </div>
