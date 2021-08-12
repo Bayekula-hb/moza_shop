@@ -1,9 +1,13 @@
 header {
   font-size: 2.3rem;
-  background-color: #576574;
+  // background-color: #576574;
+  & .div-container {
+    background-color: #576574;
+  }
   & .div-date-reseaux {
     color: #fff !important;
-    padding: 0%;margin: 0%;
+    padding: 0%;
+    margin: 0%;
     align-items: center;
     & .div-reseaux {
       & .menu-reseaux {
@@ -19,6 +23,37 @@ header {
                   hue-rotate(312deg) brightness(104%) contrast(105%);
                 transform: scale(1.2);
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  nav {
+    background-color: white;
+  }
+  & .div-search-market {
+    background-color: $colo--amour;
+    padding: 0.2%;
+    & .sous-div-search-market {
+      div {
+        & .div-search {
+          border: 1px solid white;
+          & .btn-search {
+            background-color: transparent;
+            border: 0 solid black;
+            & img {
+              object-fit: cover;
+            }
+          }
+        }
+        & .div-panier {
+          border: 1px solid white;
+          & .div-articles-montant {
+            background-color: white;
+          }
+          div {
+            & img {object-fit: cover;
             }
           }
         }
